@@ -34,7 +34,7 @@
                                             <color key="baseBackgroundColor" red="0.66666668653488159" green="0.15702522805729302" blue="0.16920542387808221" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ldb-QZ-LsG"/>
+                                            <action selector="cleaner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l5u-51-7wb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTt-tE-9cp">
@@ -46,7 +46,7 @@
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Grs-Xn-hkF"/>
+                                            <action selector="changeZnak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ynD-T0-K5Y"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQJ-wE-lKZ">
@@ -58,7 +58,7 @@
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCN-IL-Nx8"/>
+                                            <action selector="procent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8dd-zM-bbR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vs-X9-4JE">
@@ -70,7 +70,7 @@
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K6u-rQ-a1g"/>
+                                            <action selector="plus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Puh-Pt-VZq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqg-jn-Ab3">
@@ -118,7 +118,7 @@
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Fe-o0-B6a"/>
+                                            <action selector="minus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SdK-wy-9DY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pta-YD-8KQ">
@@ -166,7 +166,7 @@
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nug-0y-81U"/>
+                                            <action selector="slozhenie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ga7-fI-8FV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2l-nh-IAj">
@@ -214,7 +214,7 @@
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dF3-C1-ps5"/>
+                                            <action selector="delenie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cR2-6l-Yas"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbF-do-zPD">
@@ -225,6 +225,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="kvadrat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ki0-2V-bLi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otu-wi-lWf">
                                         <rect key="frame" x="96.333333333333343" y="395.33333333333337" width="88.333333333333343" height="93.666666666666686"/>
@@ -246,6 +249,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tochka:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fA6-v8-Nea"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qls-Dq-J4l">
                                         <rect key="frame" x="280.66666666666669" y="395.33333333333337" width="88.333333333333314" height="93.666666666666686"/>
@@ -256,7 +262,7 @@
                                             <color key="baseBackgroundColor" red="0.58199097938144329" green="0.30928460364475646" blue="0.14039894035940043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iis-6i-fpF"/>
+                                            <action selector="result:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SHM-dv-Hec"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -354,12 +360,16 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="zVq-w0-RXS" userLabel="0">
                                 <rect key="frame" x="10" y="213" width="373" height="96"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="PjS-zy-b7G"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="80"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jkt-Da-VHl" appends="YES" id="Jix-F3-Ltd"/>
+                                </connections>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -379,9 +389,11 @@
                     </view>
                     <connections>
                         <outlet property="displayResultLabel" destination="zVq-w0-RXS" id="quc-Cl-uxN"/>
+                        <outlet property="memGif" destination="mLv-uC-Aab" id="R4e-yY-gXJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="jkt-Da-VHl"/>
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>

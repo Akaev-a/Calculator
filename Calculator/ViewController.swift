@@ -9,82 +9,77 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var displayResultLabel: UILabel!
     
-    var numberFromScreen: Double = 0
-    var firstNumber: Double = 0
-    var operation: Int = 0
-    var mathsSigh: Bool = false
+    @IBOutlet weak var memGif: UIImageView! 
     
-    @IBAction func numberPress(_ sender: UIButton) {
-        if mathsSigh == true {
-            displayResultLabel.text = String(sender.tag)
-            mathsSigh = false
-        }
-        else { displayResultLabel.text = displayResultLabel.text! + String(sender.tag)
-        }
-        numberFromScreen = Double(displayResultLabel.text!)!
-    }
-    @IBAction func buttons(_ sender: UIButton) {
-        if displayResultLabel.text != "" && sender.tag != 10 && sender.tag != 11 && sender.tag != 17 && sender.tag != 19 {
-            firstNumber = Double(displayResultLabel.text!)!
-            if sender.tag == 10 { // C
-                
-            }
-            else if sender.tag == 11 { // +/-
-                displayResultLabel.text = "+/-"
-            }
-            else if sender.tag == 12 { // %
-                displayResultLabel.text = "%"
-            }
-            else if sender.tag == 13 { // +
-                displayResultLabel.text = "+"
-                
-            }
-            else if sender.tag == 14 { // -
-                displayResultLabel.text = "-"
-            }
-            else if sender.tag == 15 { // x
-                displayResultLabel.text = "×"
-            }
-            else if sender.tag == 16 { // /
-                displayResultLabel.text = "÷"
-            }
-            
-            else if sender.tag == 18 { // koren`
-                displayResultLabel.text = "√"
-            }
-            else if sender.tag == 19 { // .
-                displayResultLabel.text = "."
-            }
-        
-            mathsSigh = true
-            operation = sender.tag
-        }
-        else if sender.tag == 17 { // =
-            if operation == 13 {
-                displayResultLabel.text = String(firstNumber + numberFromScreen)
-            }
-            else if operation == 14 {
-                displayResultLabel.text = String(firstNumber - numberFromScreen)
-            }
-            else if operation == 15 {
-                displayResultLabel.text = String(firstNumber * numberFromScreen)
-            }
-            else if operation == 16 {
-                displayResultLabel.text = String(firstNumber / numberFromScreen)
-            }
-        }
-        else if sender.tag == 10 {
-            displayResultLabel.text = ""
-            firstNumber = 0
-            numberFromScreen = 0
-            operation = 0 
-        }
+    @IBOutlet weak var displayResultLabel: UITextField!
+    var service: CalcService?
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+       get {
+          return .portrait
+       }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        service = CalcService(displayView: self)
+        displayResultLabel.text = "0"
+        if let image = UIImage(named: "4yd") {
+            memGif.image = image
+            }
+    }
+
+    func updateDisplay(text: String) {
+        DispatchQueue.main.async {
+            self.displayResultLabel.text = text
+        }
     }
 }
 
+private extension ViewController {
+    @IBAction func cleaner(_ sender: Any) {
+        service?.acAction()
+    }
+    
+    @IBAction func changeZnak(_ sender: Any) {
+        service?.changeZnak()
+    }
+    
+    @IBAction func procent(_ sender: Any) {
+        service?.procent()
+    }
+    
+    @IBAction func plus(_ sender: Any) {
+        service?.plus()
+    }
+    
+    @IBAction func minus(_ sender: Any) {
+        service?.minus()
+    }
+    
+    @IBAction func slozhenie(_ sender: Any) {
+        service?.slozhenie()
+    }
+    
+    @IBAction func delenie(_ sender: Any) {
+        service?.delenie()
+    }
+
+    @IBAction func result(_ sender: Any) {
+        service?.resultat()
+    }
+    
+    @IBAction func tochka(_ sender: Any) {
+        service?.tochka()
+        
+    }
+    
+    @IBAction func kvadrat(_ sender: Any) {
+        service?.kvadrat()
+    }
+    
+    @IBAction func numberPress(_ sender: UIButton) {
+        service?.numberPress(number: sender.tag)
+    }
+}
