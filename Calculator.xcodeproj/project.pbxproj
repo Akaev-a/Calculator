@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121C31F82A95089C001FBC44 /* ModelCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121C31F72A95089C001FBC44 /* ModelCalc.swift */; };
 		125FE6832A9252C600A6B3E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FE6822A9252C600A6B3E8 /* AppDelegate.swift */; };
 		125FE6852A9252C600A6B3E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FE6842A9252C600A6B3E8 /* SceneDelegate.swift */; };
 		125FE6872A9252C600A6B3E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FE6862A9252C600A6B3E8 /* ViewController.swift */; };
 		125FE68A2A9252C600A6B3E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125FE6882A9252C600A6B3E8 /* Main.storyboard */; };
 		125FE68C2A9252C700A6B3E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125FE68B2A9252C700A6B3E8 /* Assets.xcassets */; };
 		125FE68F2A9252C700A6B3E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125FE68D2A9252C700A6B3E8 /* LaunchScreen.storyboard */; };
-		125FE69A2A9252C700A6B3E8 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FE6992A9252C700A6B3E8 /* CalculatorTests.swift */; };
-		125FE6A42A9252C700A6B3E8 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FE6A32A9252C700A6B3E8 /* CalculatorUITests.swift */; };
-		125FE6A62A9252C700A6B3E8 /* CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FE6A52A9252C700A6B3E8 /* CalculatorUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		121C31F72A95089C001FBC44 /* ModelCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCalc.swift; sourceTree = "<group>"; };
 		125FE67F2A9252C600A6B3E8 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		125FE6822A9252C600A6B3E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		125FE6842A9252C600A6B3E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,10 +44,7 @@
 		125FE68E2A9252C700A6B3E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		125FE6902A9252C700A6B3E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		125FE6952A9252C700A6B3E8 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		125FE6992A9252C700A6B3E8 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		125FE69F2A9252C700A6B3E8 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		125FE6A32A9252C700A6B3E8 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
-		125FE6A52A9252C700A6B3E8 /* CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				125FE6812A9252C600A6B3E8 /* Calculator */,
-				125FE6982A9252C700A6B3E8 /* CalculatorTests */,
-				125FE6A22A9252C700A6B3E8 /* CalculatorUITests */,
 				125FE6802A9252C600A6B3E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +95,7 @@
 			children = (
 				125FE6822A9252C600A6B3E8 /* AppDelegate.swift */,
 				125FE6842A9252C600A6B3E8 /* SceneDelegate.swift */,
+				121C31F72A95089C001FBC44 /* ModelCalc.swift */,
 				125FE6862A9252C600A6B3E8 /* ViewController.swift */,
 				125FE6882A9252C600A6B3E8 /* Main.storyboard */,
 				125FE68B2A9252C700A6B3E8 /* Assets.xcassets */,
@@ -108,23 +103,6 @@
 				125FE6902A9252C700A6B3E8 /* Info.plist */,
 			);
 			path = Calculator;
-			sourceTree = "<group>";
-		};
-		125FE6982A9252C700A6B3E8 /* CalculatorTests */ = {
-			isa = PBXGroup;
-			children = (
-				125FE6992A9252C700A6B3E8 /* CalculatorTests.swift */,
-			);
-			path = CalculatorTests;
-			sourceTree = "<group>";
-		};
-		125FE6A22A9252C700A6B3E8 /* CalculatorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				125FE6A32A9252C700A6B3E8 /* CalculatorUITests.swift */,
-				125FE6A52A9252C700A6B3E8 /* CalculatorUITestsLaunchTests.swift */,
-			);
-			path = CalculatorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +238,7 @@
 			files = (
 				125FE6872A9252C600A6B3E8 /* ViewController.swift in Sources */,
 				125FE6832A9252C600A6B3E8 /* AppDelegate.swift in Sources */,
+				121C31F82A95089C001FBC44 /* ModelCalc.swift in Sources */,
 				125FE6852A9252C600A6B3E8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				125FE69A2A9252C700A6B3E8 /* CalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				125FE6A62A9252C700A6B3E8 /* CalculatorUITestsLaunchTests.swift in Sources */,
-				125FE6A42A9252C700A6B3E8 /* CalculatorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
